@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Quiénes Somos - EZKALIBUR</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EZKALIBUR - Mantenimiento de Computadores</title>
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -18,10 +18,7 @@
     header {
       background-color: black;
       padding: 10px 0;
-      display: flex;
-      justify-content: space-between; /* Distribuye los elementos a lo largo del header */
-      align-items: center; /* Centra verticalmente los elementos del header */
-      margin-bottom: 20px; /* Espacio debajo del header */
+      text-align: center; /* Alinea el contenido del encabezado al centro */
     }
 
     nav ul {
@@ -48,12 +45,13 @@
     }
 
     .logo {
-      margin-left: 20px; /* Espacio a la izquierda del logo */
+      text-align: start ; /* Alinea el logo al centro */
+      margin-bottom: 20px;
     }
 
     .section {
       padding: 50px;
-      text-align: left; /* Alinea el texto de las secciones a la izquierda */
+      text-align: center; /* Alinea el contenido de las secciones al centro */
       margin: 0 auto; /* Centra la sección horizontalmente */
       max-width: 800px; /* Define un ancho máximo para las secciones */
     }
@@ -67,19 +65,24 @@
       line-height: 1.6;
     }
 
-    .section ul {
-      text-align: left; /* Alinea las listas al texto a la izquierda */
-      margin-top: 20px;
-      padding-left: 20px; /* Añade sangría a las listas */
-    }
-
     .section img {
       max-width: 100%;
       height: auto;
       margin-top: 20px;
-      display: block; /* Asegura que la imagen sea un bloque para centrarla */
-      margin-left: auto; /* Centra la imagen horizontalmente */
-      margin-right: auto; /* Centra la imagen horizontalmente */
+    }
+
+    .btn-conocer-servicios {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: gold;
+      color: black;
+      text-decoration: none;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    .btn-conocer-servicios:hover {
+      background-color: #ffd700;
     }
 
     footer {
@@ -95,9 +98,6 @@
 </head>
 <body>
   <header>
-    <div class="logo">
-      <img src="IMAGENES/Logo_3_3.jpg" alt="EZKALIBUR">
-    </div>
     <nav>
       <ul>
         <li><a href="inicio.html">Inicio</a></li>
@@ -106,26 +106,30 @@
         <li><a href="contacto.html">Contacto</a></li>
       </ul>
     </nav>
+    <div class="logo">
+      <img src="IMAGENES/Logo_3_3.jpg" alt="EZKALIBUR" />
+    </div>
   </header>
 
   <main>
-    <section id="quienes-somos" class="section">
-      <h2>Quiénes Somos</h2>
-      <p>En EZKALIBUR, nos caracterizamos por:</p>
-      <ul>
-        <li><strong>Ofrecer un servicio integral:</strong> Brindamos soluciones completas para el cuidado de sus equipos, desde el mantenimiento preventivo hasta la reparación de fallas complejas.</li>
-        <li><strong>Atención personalizada:</strong> Nos tomamos el tiempo para conocer sus necesidades y ofrecerle la mejor solución para su equipo.</li>
-        <li><strong>Precios justos:</strong> Mantenemos precios competitivos sin comprometer la calidad de nuestro servicio.</li>
-        <li><strong>Compromiso con la excelencia:</strong> Nos esforzamos por brindar un servicio de la más alta calidad, superando las expectativas de nuestros clientes.</li>
-      </ul>
-      <p>En EZKALIBUR, creemos que la tecnología debe estar al servicio de las personas. Por eso, nos enfocamos en brindarle un servicio confiable, eficiente y amigable, para que usted pueda disfrutar de sus equipos sin preocupaciones.</p>
-      <img src="IMAGENES/Quienes_Somos.png" alt="Imagen del equipo EZKALIBUR">
+    <section id="inicio" class="section">
+      <h2>Bienvenido a EZKALIBUR</h2>
+      <p>
+        Somos EZKALIBUR, una empresa joven y dinámica especializada en el
+        mantenimiento de computadores, nacida con la ambición de convertirnos
+        en líderes del sector. A pesar de ser una empresa nueva, contamos con
+        un equipo de técnicos altamente calificados y apasionados por la
+        tecnología, quienes poseen una amplia experiencia en el mantenimiento
+        de equipos de computo, tanto en el ámbito hogar como empresarial.
+      </p>
+
+      <img src="IMAGENES/Logo.jpg" alt="Logo EZKALIBUR" />
+      <a href="nuestros-servicios.html" class="btn-conocer-servicios">Conocer nuestros servicios</a>
     </section>
   </main>
 
-  <footer>
+  
     <p>&copy; 2024 EZKALIBUR. Todos los derechos reservados.</p>
-  </footer>
+  
 </body>
 </html>
-
